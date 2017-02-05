@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.google.android.gms.location.sample.basiclocationsample" >
+	<uses-library
+		android:name="com.google.android.maps" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-feature android:name="android.hardware.location.gps" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<application
+
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:theme="@style/AppTheme" >
+		<activity
+			android:name="arzombie.locationservices.getLocation"
+			android:label="@string/app_name" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<meta-data
+			android:name="com.google.android.geo.API_KEY"
+			android:value="AIzaSyBPgd-fjaIi9IO_S04oNMJKe1ywbx-FHO0"/>
+	</application>
+
+	<service android:enabled="true" android:name="com.test.sendintent.MyService" />
+
+</manifest>
+
